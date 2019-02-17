@@ -11,4 +11,4 @@ python3 csegraph.py --graphviz cse.html output.gv
 
 Sample output:
 
-![sample graph output](./sample-output.svg)
+![sample graph output](./sample-output.png)
