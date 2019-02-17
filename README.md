@@ -9,6 +9,6 @@ wget https://www.washington.edu/students/crscat/cse.html
 python3 csegraph.py --graphviz cse.html output.gv
 ```
 
-Or just look open [sample-output.pdf]!
+Sample output:
 
-[sample-output.pdf]: https://raw.githubusercontent.com/daboross/uw-cse-graph/master/sample-output.pdf
+![sample graph output](./sample-output.svg)
