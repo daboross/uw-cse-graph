@@ -32,6 +32,11 @@ def find_prereqs_full(filename):
                               for s in _course_name_regex.findall(description))
         pre_map[name] = set(s for s in first_pass_prereqs if s != tag)
 
+    # filter out courses mentioned which we don't care about
+    for key in pre_map.keys():
+        pre_map[key] = [x for x in pre_map[key]
+                        if x in desc_map or not x.startswith("cse")]
+
     return pre_map, desc_map
 
 
